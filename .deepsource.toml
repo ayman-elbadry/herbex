@@ -3,17 +3,5 @@ version = 1
 [[analyzers]]
 name = "php"
 
-[[analyzers]]
-name = "javascript"
-
-  [analyzers.meta]
-  plugins = ["react"]
-
-[[transformers]]
-name = "standardjs"
-
-[[transformers]]
-name = "prettier"
-
 [[transformers]]
 name = "php-cs-fixer"
