@@ -8,7 +8,7 @@ use App\Models\Produit;
 
 class Category extends Model
 {
-    protected $table="categories";
+    protected $table = "categories";
     protected $fillable = [
         'nom',
     ];

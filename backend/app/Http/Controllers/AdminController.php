@@ -10,8 +10,6 @@ use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
 {
-
-
     public function index()
     {
         $admins = Admin::all();
@@ -49,7 +47,7 @@ class AdminController extends Controller
         return response()->json($admin, 200);
     }
 
-    
+
     public function destroy($id)
     {
         $admin = Admin::findOrFail($id);

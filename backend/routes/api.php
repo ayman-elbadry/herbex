@@ -15,7 +15,6 @@ use App\Http\Controllers\CommandeController;
 use App\Http\Controllers\ProduitController;
 use App\Http\Controllers\CommandeProduitController;
 
-
 Route::post('/register', [RegisteredUserController::class, 'store']);
 Route::post('/forgot-password', [PasswordResetLinkController::class, 'store']);
 Route::post('/reset-password', [NewPasswordController::class, 'store']);

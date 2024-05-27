@@ -40,7 +40,7 @@ class PromotionController extends Controller
      * @param  \App\Models\Promotion  $promotion
      * @return \Illuminate\Http\Response
      */
-    
+
 
     /**
      * Display the specified resource.
@@ -54,19 +54,19 @@ class PromotionController extends Controller
      * Update the specified resource in storage.
      */
     public function update(Request $request, Promotion $promotion)
-{
-    $request->validate([
-        'titre' => 'required|string|max:255',
-        'description' => 'required|string',
-        'date_debut' => 'required|date',
-        'date_fin' => 'required|date|after_or_equal:date_debut',
-        'discount' => 'required|numeric|min:0',
-    ]);
+    {
+        $request->validate([
+            'titre' => 'required|string|max:255',
+            'description' => 'required|string',
+            'date_debut' => 'required|date',
+            'date_fin' => 'required|date|after_or_equal:date_debut',
+            'discount' => 'required|numeric|min:0',
+        ]);
 
-    $promotion->update($request->all());
+        $promotion->update($request->all());
 
-    return response()->json(['message' => 'Promotion updated successfully', 'data' => $promotion]);
-}
+        return response()->json(['message' => 'Promotion updated successfully', 'data' => $promotion]);
+    }
     /**
      * Remove the specified resource from storage.
      */
