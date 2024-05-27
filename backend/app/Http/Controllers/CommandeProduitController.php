@@ -22,7 +22,7 @@ class CommandeProduitController extends Controller
             'prix_unitaire' => $request->prix_unitaire,
         ]);
 
-        
+
 
         return response()->json($commandeProduit, 201);
     }

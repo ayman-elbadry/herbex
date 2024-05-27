@@ -50,6 +50,6 @@ class RegisteredUserController extends Controller
 
         // Auth::login($user);
 
-        return response()->json(['message' =>'client enregistré avec succès']);
+        return response()->json(['message' => 'client enregistré avec succès']);
     }
 }

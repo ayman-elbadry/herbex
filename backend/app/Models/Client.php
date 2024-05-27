@@ -45,4 +45,3 @@ class Client extends Authenticatable
 
     protected $table = 'clients';
 }
-
